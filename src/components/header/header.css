@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  background-color: #4e8098;
+  text-align: center;
+  padding: 1.3rem 0rem;
+}
+
+.container_items {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+a {
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 600px) {
+  a {
+    font-size: 0.8rem;
+  }
+}
