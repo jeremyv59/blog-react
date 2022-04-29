@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PostItem from "../post-item/PostItem";
 import "../posts-list/postslist.css";
 import axios from "axios";
+import LoadingSpinner from "../post-item/LoadingSpinner";
 
 const PostsList = () => {
   const [data, setData] = useState(null);
@@ -31,12 +32,12 @@ const PostsList = () => {
     <div className="container">
       <h1 className="title">Tous les articles</h1>
       <div className="container_posts">
-        {data ? (
+        {!loading && data ? (
           data.map((post) => {
             return <PostItem key={post.id} title={post.title}></PostItem>;
           })
         ) : (
-          <p>loading</p>
+          <LoadingSpinner></LoadingSpinner>
         )}
       </div>
     </div>
