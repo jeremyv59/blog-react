@@ -5,11 +5,9 @@ const Header = () => {
   return (
     <header>
       <div className="container_items">
-        <a>ACCUEIL</a>
-
-        <a>ECRIRE</a>
-
-        <a>CONTACT</a>
+        <a href="/">ACCUEIL</a>
+        <a href="/ecrire">ECRIRE</a>
+        <a href="/contact">CONTACT</a>
       </div>
     </header>
   );

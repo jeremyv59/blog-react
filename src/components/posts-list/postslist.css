@@ -1,9 +1,15 @@
 .container_posts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 3rem;
+  /* margin-top: 2rem; */
   margin-bottom: 2rem;
   gap: 1.5rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #4e8098;
+  margin: 1.5rem 0rem;
 }
 
 @media screen and (max-width: 1024px) {

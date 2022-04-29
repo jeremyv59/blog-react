@@ -39,10 +39,13 @@ const PostsList = () => {
   ]);
 
   return (
-    <div className="container container_posts">
-      {postsList.map((post) => {
-        return <PostItem title={post.title}></PostItem>;
-      })}
+    <div className="container">
+      <h1 className="title">Tous les articles</h1>
+      <div className="container_posts">
+        {postsList.map((post) => {
+          return <PostItem title={post.title}></PostItem>;
+        })}
+      </div>
     </div>
   );
 };
