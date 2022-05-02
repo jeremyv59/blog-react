@@ -8,16 +8,20 @@ const Header = () => {
     <header>
       <ul className="container_items">
         <li>
-          <HomeOutlined className="icon"></HomeOutlined>
-          <Link to="/">Accueil</Link>
+          <Link to="/">
+            <HomeOutlined className="icon"></HomeOutlined>
+            Accueil
+          </Link>
         </li>
         <li>
-          <BookOutlined className="icon"></BookOutlined>
-          <Link to="/ecrire">Ecrire</Link>
+          <Link to="/ecrire">
+            <BookOutlined className="icon"></BookOutlined>Ecrire
+          </Link>
         </li>
         <li>
-          <MessageOutlined className="icon"></MessageOutlined>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">
+            <MessageOutlined className="icon"></MessageOutlined>Contact
+          </Link>
         </li>
       </ul>
     </header>
