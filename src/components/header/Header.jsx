@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../header/header.css";
+import { HomeOutlined, BookOutlined, MessageOutlined } from "@ant-design/icons";
 
 const Header = () => {
   return (
     <header>
       <ul className="container_items">
-        <li className="item">
+        <li>
+          <HomeOutlined className="icon"></HomeOutlined>
           <Link to="/">Accueil</Link>
         </li>
-        <li className="item">
+        <li>
+          <BookOutlined className="icon"></BookOutlined>
           <Link to="/ecrire">Ecrire</Link>
         </li>
-        <li className="item">
+        <li>
+          <MessageOutlined className="icon"></MessageOutlined>
           <Link to="/contact">Contact</Link>
         </li>
       </ul>

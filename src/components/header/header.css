@@ -12,6 +12,10 @@ header {
   list-style: none;
 }
 
+.icon {
+  margin: 0rem 0.8rem;
+}
+
 a {
   font-size: 1rem;
   font-family: Georgia, "Times New Roman", Times, serif;
