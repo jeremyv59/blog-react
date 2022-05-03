@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { BlogContext } from "./context/BlogContext";
 import Contact from "./pages/Contact";
 import Homepage from "./pages/Homepage";
 import Write from "./pages/Write";
 import axios from "axios";
+import Article from "./pages/Article";
+import Header from "./components/header/Header";
 
 function App() {
   const [data, setData] = useState(null);
@@ -33,11 +35,18 @@ function App() {
   return (
     <React.Fragment>
       <BlogContext.Provider value={{ data, setData }}>
-        <Routes>
-          <Route path="/" element={<Homepage></Homepage>}></Route>
-          <Route path="/ecrire" element={<Write></Write>}></Route>
-          <Route path="/contact" element={<Contact></Contact>}></Route>
-        </Routes>
+        <BrowserRouter>
+          <Header></Header>
+          <Routes>
+            <Route path="/" element={<Homepage></Homepage>}></Route>
+            <Route
+              path="/posts/:postTitle"
+              element={<Article></Article>}
+            ></Route>
+            <Route path="/ecrire" element={<Write></Write>}></Route>
+            <Route path="/contact" element={<Contact></Contact>}></Route>
+          </Routes>
+        </BrowserRouter>
       </BlogContext.Provider>
     </React.Fragment>
   );

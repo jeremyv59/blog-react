@@ -20,6 +20,7 @@ const PostsList = () => {
               <PostItem
                 key={post.id ? post.id : index}
                 title={post.title}
+                body={post.body}
               ></PostItem>
             );
           })

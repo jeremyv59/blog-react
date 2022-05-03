@@ -1,0 +1,9 @@
+.article_title {
+  margin: 1.5rem 0rem;
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.article_body {
+  color: var(--color-secondary);
+}
