@@ -28,7 +28,7 @@ const WriteForm = () => {
     <Form form={form} className=" container form_container">
       <h2>Ecrivez quelque chose...</h2>
       <Form.Item className="form_item">
-        <h5>Nom :</h5>
+        <h5>Titre :</h5>
         <Input
           placeholder="Renseigner votre nom"
           className="input_name"

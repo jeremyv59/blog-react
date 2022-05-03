@@ -20,3 +20,9 @@
   color: #4e8098;
   height: 8%;
 }
+
+@media screen and (max-width: 500px) {
+  .card_container {
+    width: 100%;
+  }
+}
