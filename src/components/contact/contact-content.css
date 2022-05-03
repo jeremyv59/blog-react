@@ -1,0 +1,34 @@
+.contact_title {
+  color: var(--color-secondary);
+  margin: 1.5rem 0rem;
+}
+
+.contact_us {
+  color: var(--color-white);
+}
+
+.icon_item {
+  margin-left: 0.8rem;
+}
+
+.join_us_title {
+  margin-top: 1.5rem;
+  color: var(--color-secondary);
+}
+
+.container_socials {
+  width: 15%;
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_item {
+  font-size: 1.6rem;
+  color: var(--color-white);
+  transition: var(--transition);
+}
+
+.social_item:hover {
+  color: var(--color-secondary);
+}
