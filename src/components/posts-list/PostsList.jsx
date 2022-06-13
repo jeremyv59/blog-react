@@ -8,8 +8,6 @@ import { BlogContext } from "../../context/BlogContext";
 const PostsList = () => {
   const context = useContext(BlogContext);
 
-  console.log("ctx", context);
-
   return (
     <div className="container">
       <h1 className="title">Tous les articles</h1>
