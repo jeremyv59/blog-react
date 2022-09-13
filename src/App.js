@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
 import { BlogContext } from "./context/BlogContext";
 import Contact from "./pages/Contact";
 import Homepage from "./pages/Homepage";
@@ -35,7 +35,7 @@ function App() {
   return (
     <React.Fragment>
       <BlogContext.Provider value={{ data, setData }}>
-        <BrowserRouter>
+        <HashRouter basename="/">
           <Header></Header>
           <Routes>
             <Route path="/" element={<Homepage></Homepage>}></Route>
@@ -46,7 +46,7 @@ function App() {
             <Route path="/ecrire" element={<Write></Write>}></Route>
             <Route path="/contact" element={<Contact></Contact>}></Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </BlogContext.Provider>
     </React.Fragment>
   );
